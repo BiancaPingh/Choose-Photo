@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  pointer-events: all;
+}
+
+.App-img {
+  height: 40vmin;
+  pointer-events: all;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-final {
+    animation: App-img-pulse 2s infinite;
+    height: 60vmin;
+    pointer-events: all;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  pointer-events: all;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-img-pulse {
+  0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
